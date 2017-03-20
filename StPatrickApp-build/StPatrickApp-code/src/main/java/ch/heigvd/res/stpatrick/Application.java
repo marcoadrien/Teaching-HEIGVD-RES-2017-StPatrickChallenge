@@ -7,6 +7,9 @@ package ch.heigvd.res.stpatrick;
  */
 public class Application {
 
+   IStreamDecoratorController controller;
+   
+   
   IStreamProcessorsFactory processorsFactory = new StreamProcessorsFactory();
   
   public IStreamProcessorsFactory getStreamProcessorsFactory() {
@@ -14,6 +17,6 @@ public class Application {
   }
 
   IStreamDecoratorController getStreamDecoratorController() {
-    return null;
+    return controller;
   }
 }
